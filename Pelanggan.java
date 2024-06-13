@@ -2,7 +2,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Pelanggan implements PelangganInterface {
+    @SuppressWarnings("unused")
     private String id;
+    @SuppressWarnings("unused")
     private String nama;
     private Map<String, Sewa> sewaMap = new HashMap<>();
 

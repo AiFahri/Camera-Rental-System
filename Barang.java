@@ -30,6 +30,12 @@ public abstract class Barang {
     public void setKuantitas(int kuantitas) {
         this.kuantitas = kuantitas;
     }
+    public void kurangiKuantitas(int kuantitas) throws InsufficientQuantityException {
+        if (this.kuantitas < kuantitas) {
+            throw new InsufficientQuantityException("Kuantitas tidak mencukupi.");
+        }
+        this.kuantitas -= kuantitas;
+    }
 
     @Override
     public String toString() {

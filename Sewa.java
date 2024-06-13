@@ -15,6 +15,20 @@ public class Sewa implements SewaInterface {
         return id;
     }
 
+   
+    public List<Barang> getBarangs() {
+        return barangg;
+    }
+
+   
+    public List<Integer> getJamSewa() {
+        return jamSewa;
+    }
+
+    
+    public List<Integer> getKuantitasSewa() {
+        return kuantitasSewa;
+    }
     @Override
     public void tambahBarang(Barang barang, int jam, int kuantitas) {
         barangg.add(barang);
